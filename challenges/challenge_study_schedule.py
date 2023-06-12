@@ -1,21 +1,9 @@
-def is_anagram(permanence_period, target_time):
-    if type(target_time) != int:
+def study_schedule(permanence_period, target_time):
+    elemValue = 0
+    try:
+        for permanence, target in permanence_period:
+            if permanence <= target_time <= target:
+                elemValue += 1
+    except TypeError:
         return None
-
-    students_at_same_time = 0
-
-    n = len(permanence_period)
-    for index in range(0, n):
-        if (
-            type(permanence_period[index][0]) != int
-            or type(permanence_period[index][1]) != int
-        ):
-            return None
-
-        if (
-            permanence_period[index][0]
-            <= target_time
-            <= permanence_period[index][1]
-        ):
-            students_at_same_time += 1
-    return students_at_same_time
+    return elemValue
