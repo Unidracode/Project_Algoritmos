@@ -19,4 +19,3 @@ def is_anagram(permanence_period, target_time):
         ):
             students_at_same_time += 1
     return students_at_same_time
-
