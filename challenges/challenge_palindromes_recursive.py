@@ -1,5 +1,5 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    if len(word) == 0:  # caso base
+    if len(word) == 0:
         return False
     elif low_index >= high_index:
         return True
