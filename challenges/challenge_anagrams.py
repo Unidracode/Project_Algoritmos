@@ -6,6 +6,7 @@ def quick_sort(string_list, start, end):
 
     return string_list
 
+
 def partition(string, start, end):
     pivot = string[end]
     delimiter = start - 1
